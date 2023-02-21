@@ -14,3 +14,14 @@ function factorial(num) {
 	return factorial;
 }
 factorial(5);
+
+
+
+/* RECURSIVE SOLUTION */
+function recursiveFactorial(num) {
+  if (typeof num !== 'number') return 'The parameter is not a number';
+  const transformedNumber = parseInt(num);
+  if (num === 0) return 1;
+  return transformedNumber * recursiveFactorial(transformedNumber - 1);
+}
+recursiveFactorial(5);
