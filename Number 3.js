@@ -19,10 +19,9 @@ function showDivision(n1, n2) {
 showDivision(10,5);
 
 // Solucion creada por Raynier95
-
-const numDivididos=(num1=undefined,num2=undefined)=>{
-  if(num1 === undefined || num2 === undefined) return console.warn(`Esta indefinido`);
-  if(typeof num1 !== 'number' || typeof num2 !== 'number') return console.warn(`No es un numero`);
+const numDivididos = (num1=undefined,num2=undefined) => {
+  if (num1 === undefined || num2 === undefined) return console.warn(`Esta indefinido`);
+  if (typeof num1 !== 'number' || typeof num2 !== 'number') return console.warn(`No es un numero`);
   let cociente = num1 / num2
   let residuo = num1 % num2
   console.log(`El cociente entre ${num1} y ${num2} es ${cociente} mientras que su residuo es ${residuo}`)
